@@ -1,0 +1,135 @@
+body {
+	background-color: cadetblue;
+	margin: auto, 10px;
+}
+
+.categoryAndContentBox {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+
+.contentCategory {
+	display: block;
+	position: relative;
+	line-height: 50px;
+	width: 300px;
+	height: 50px;
+	background-color: greenyellow;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.categoryAddButton {
+	display: none;
+}
+
+.categoryAddButton.hover {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	line-height: 10px;
+	font-size: 50px;
+	color: green;
+	top: 5px;
+	right: 60px;
+}
+
+.categoryRemoveButton {
+	display: none;
+}
+
+.categoryRemoveButton.hover {
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	font-size: 20px;
+	top: 5px;
+	right: 5px;
+}
+
+.contentBoxAddInput {
+	display: block;
+	width: 302px;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+	font-size: 30px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.contentBox {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 50px;
+	background-color: bisque;
+	border: 1px solid black;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.contentBox.drag {
+	width: 294px;
+	background-color: lightblue;
+	border: 3px solid black;
+}
+
+.contentModifyModal {
+	display: none;
+}
+
+.contentModifyModal.click {
+	display: block;
+	position: absolute;
+	background-color: aquamarine;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+}
+
+.categoryModifyModal {
+	display: none;
+}
+
+.categoryModifyModal.click {
+	display: block;
+	position: absolute;
+	background-color: rgb(127, 210, 255);
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+}
+
+.elementRemoveButton {
+	display: none;
+}
+
+.elementRemoveButton.hover {
+	display: block;
+	position: absolute;
+	font-size: 20px;
+	width: 50px;
+	height: 40px;
+	top: 5px;
+	right: 5px;
+}
