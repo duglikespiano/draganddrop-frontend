@@ -5,13 +5,15 @@
 	"scripts": {
 		"serve": "vue-cli-service serve --port 3000",
 		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint"
+		"lint": "vue-cli-service lint",
+		"distribute": "npm i && npm run build && pm2 serve build 3000 --name draganddrop --spa"
 	},
 	"dependencies": {
 		"core-js": "^3.8.3",
 		"dotenv": "^16.0.3",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-prettier": "^4.2.1",
+		"pm2": "^5.2.2",
 		"vue": "^3.2.13"
 	},
 	"devDependencies": {
