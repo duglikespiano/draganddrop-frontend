@@ -311,8 +311,8 @@
 							'Content-Type': 'application/json',
 						},
 						body: JSON.stringify({
-							sourceOrderInf: this.contentToSpliceCoordinate[0],
-							targetOrderInf: i,
+							sourceOrderInf: this.contentToSpliceCoordinate[0] + 1,
+							targetOrderInf: i + 1,
 						}),
 					});
 
@@ -361,6 +361,7 @@
 							'Content-Type': 'application/json',
 						},
 						body: JSON.stringify({
+							contentCategoryId: this.copiedData[i].id,
 							sourceContentOrderInf: this.contentToSplice.orderInf,
 							targetContentOrderInf: this.copiedData[i].content[j].orderInf,
 						}),
